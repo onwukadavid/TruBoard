@@ -1,7 +1,12 @@
 # TruBoard
 Web Forum or Discussion Board
 
-TruBoard is web discussion forum developed using python(Django), HTML, CSS(bootsrap), JavaScript(Popper.js).
+TruBoard is web discussion forum developed using:
+
+* python(Django) as the backend of this project for mapping and routing urls, interacting with the database, 
+* HTML, 
+* CSS(bootsrap) for styling, 
+* JavaScript(Popper.js, simplemde.js): popper.js for displaying a dropdown menu for authenticated user, simplemde.js for adding a markdown editor to text areas
 
 ## New boards can only be created by an Admin
 
