@@ -1,0 +1,9 @@
+.navbar-brand
+{
+    font-family: 'Anton', sans-serif;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
