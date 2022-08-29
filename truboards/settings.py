@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY')
 
-DEBUG = config('DEBUG', default = False, cast=bool)
+DEBUG = config('DEBUG', default = True, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
@@ -103,6 +103,18 @@ DATABASES = {
     # 'default': dj_database_url.config(
     #     default = config('DATABASE_URL')
     # )
+
+     'default': {  
+        'ENGINE': 'django.db.backends.mysql',  
+        'NAME': config('DB_NAME'),  
+        'USER': config('DB_USER'),  
+        'PASSWORD': config( 'DB_PASSWORD'),  
+        'HOST': config('DB_HOST'),  
+        'PORT': config('PORT_NUMBER'),  
+        'OPTIONS': {  
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+        }  
+    }  
 }
 
 
