@@ -8,3 +8,4 @@ python-decouple==3.6
 sqlparse==0.4.2
 tzdata==2022.1
 zipp==3.8.1
+mysqlclient==2.1.1
