@@ -9,6 +9,6 @@ python-decouple==3.6
 sqlparse==0.4.2
 tzdata==2022.1
 zipp==3.8.1
-mysqlclient==2.1.1
-# mysqlclient @ file:///C:/Users/Onwuka%20David/DEVELOPMENT/TruBoard/mysqlclient-2.1.1-cp39-cp39-win_amd64.whl
+# mysqlclient==2.1.1
+mysqlclient @ file:///C:/Users/Onwuka%20David/DEVELOPMENT/TruBoard/mysqlclient-2.1.1-cp39-cp39-win_amd64.whl
 python_version == 3.9
