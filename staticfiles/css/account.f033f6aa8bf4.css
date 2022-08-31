@@ -1,0 +1,24 @@
+body
+{
+    background-image: url("../img/leaves.a7b2e68d5ed2.png");
+}
+
+.logo
+{
+    font-family: 'peralta', cursive;
+}
+
+.logo a
+{
+    color: rgba(0,0,0,.9);
+}
+
+.logo a:hover,
+.logo a:active
+{
+    text-decoration: none
+}
+
+.btn {
+    width: 100%;
+}
