@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 # DEBUG = config('DEBUG', default = True, cast=bool)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['truboard-production.up.railway.app']
 # ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
