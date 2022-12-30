@@ -102,23 +102,23 @@ WSGI_APPLICATION = 'truboards.wsgi.application'
 
 DATABASES = {
 
-    # 'default': dj_database_url.config(
-    #     default = config('DATABASE_URL'),
-    #     conn_max_age=1800,
-    #     # engine='django.db.backends.mysql',
-    # ),
+    'default': dj_database_url.config(
+        default = config('DATABASE_URL'),
+        conn_max_age=1800,
+        # engine='django.db.backends.mysql',
+    ),
     
-        'default': {  
-        'ENGINE': 'django.db.backends.mysql',  
-        'NAME': os.environ['MYSQLDATABASE'],  
-        'USER': os.environ['MYSQLUSER'],  
-        'PASSWORD': os.environ['MYSQLPASSWORD'],  
-        'HOST': os.environ['MYSQLHOST'],  
-        'PORT': os.environ['MYSQLPORT'],  
-        'OPTIONS': {  
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
-        }  
-    }  
+    #     'default': {  
+    #     'ENGINE': 'django.db.backends.mysql',  
+    #     'NAME': os.environ['MYSQLDATABASE'],  
+    #     'USER': os.environ['MYSQLUSER'],  
+    #     'PASSWORD': os.environ['MYSQLPASSWORD'],  
+    #     'HOST': os.environ['MYSQLHOST'],  
+    #     'PORT': os.environ['MYSQLPORT'],  
+    #     'OPTIONS': {  
+    #         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+    #     }  
+    # }  
 
 }
 
