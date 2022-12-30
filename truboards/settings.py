@@ -109,7 +109,7 @@ DATABASES = {
     ),
     'OPTIONS': {
             'ssl' : {
-                'sslmode': True
+                'ssl_disabled': True
             }
         }
 
