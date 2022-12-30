@@ -186,9 +186,9 @@ CSRF_TRUSTED_ORIGINS = ['https://truboard-production.up.railway.app/']
 # CSRF_TRUSTED_ORIGINS = [
 #     'https://truboard-production.up.railway.app/'
 # ],
-ALLOWED_HOSTS = [
-    'truboard-production.up.railway.app',
-],
+# ALLOWED_HOSTS = [
+#     'truboard-production.up.railway.app',
+# ],
 CORS_ORIGIN_WHITELIST = [
     'https://truboard-production.up.railway.app/',
 ]
