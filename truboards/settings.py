@@ -31,7 +31,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 # DEBUG = config('DEBUG', default = True, cast=bool)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['truboard-production.up.railway.app']
 # ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
@@ -182,4 +182,4 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # django_heroku.settings(locals())
 
-CSRF_TRUSTED_ORIGINS = ['https://truboard-production.up.railway.app/']
+# CSRF_TRUSTED_ORIGINS = ['https://truboard-production.up.railway.app/']
