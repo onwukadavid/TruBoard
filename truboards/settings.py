@@ -107,6 +107,11 @@ DATABASES = {
         conn_max_age=1800,
         # engine='django.db.backends.mysql',
     ),
+    'OPTIONS': {
+            'ssl' : {
+                'sslmode': True
+            }
+        }
 
 }
 
