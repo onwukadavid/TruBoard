@@ -181,3 +181,5 @@ LOGIN_URL = 'login'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # django_heroku.settings(locals())
+
+CSRF_TRUSTED_ORIGINS = ['https://truboard-production.up.railway.app/']
