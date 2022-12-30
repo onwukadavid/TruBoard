@@ -1,1 +1,3 @@
-web: gunicorn truboards.wsgi:application --log-file -
+release: python manage.py migrate
+
+web: gunicorn truboards.wsgi
