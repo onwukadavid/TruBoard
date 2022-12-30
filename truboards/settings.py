@@ -29,7 +29,8 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', default = True, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # with open('/etc/secret_key.txt') as f:
@@ -54,7 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     
     'widget_tweaks',
-    
+    'boards',
     'account',
     
 ]
@@ -158,7 +159,7 @@ STATIC_URL = '/static/'
 #     BASE_DIR / 'static'
 # ]
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

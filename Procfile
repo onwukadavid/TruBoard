@@ -1,1 +1,1 @@
-web gunicorn truboards.wsgi:application --log-file -
+web gunicorn truboards.wsgi --log-file -
