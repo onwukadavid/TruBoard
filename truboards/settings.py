@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY')
 
-DEBUG = False
+DEBUG = True
 # DEBUG = config('DEBUG', default = True, cast=bool)
 
 ALLOWED_HOSTS = ['truboard-production.up.railway.app', '0.0.0.0']
