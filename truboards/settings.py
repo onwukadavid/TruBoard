@@ -14,7 +14,7 @@ import django_heroku
 from pathlib import Path
 
 from dotenv import load_dotenv
-# from decouple import config, Csv
+from decouple import config, Csv
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,7 +27,7 @@ load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = False
 # DEBUG = config('DEBUG', default = True, cast=bool)
