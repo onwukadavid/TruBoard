@@ -98,12 +98,12 @@ WSGI_APPLICATION = 'truboards.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASE_URL = config('DATABASE_URL')
+# DATABASE_URL = config('DATABASE_URL')
 
 DATABASES = {
 
     'default': dj_database_url.config(
-        default = DATABASE_URL,
+        default = config('DATABASE_URL'),
         conn_max_age=1800,
         # engine='django.db.backends.mysql',
     ),
